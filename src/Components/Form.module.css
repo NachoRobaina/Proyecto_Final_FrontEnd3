@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem;
+}
+
+.form input {
+  padding: 0.5rem;
+  width: 20%;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
