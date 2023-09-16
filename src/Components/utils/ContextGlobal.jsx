@@ -4,12 +4,12 @@ import { useState } from "react";
 export const ContextGlobal = createContext({});
 
 export const ContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   function changeTheme() {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
+    if (theme === "dark") {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
   }
 

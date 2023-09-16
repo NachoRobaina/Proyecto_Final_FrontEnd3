@@ -10,10 +10,11 @@ function Card({ nombre, username, esFav, handleFav }) {
   return (
     <div className={styles.card}>
       <img src="../images/doctor.jpg" alt="doctor" style={{ width: "150px"}}/>
-      <h2>{nombre}</h2>
+      <p>{nombre}</p>
       <p>{username}</p>
       <button onClick={handleClick}>
-        {fav ? "Remove from Favs" : "Add to Favs"}
+        {fav ? <img src="../images/no-fav.png" alt="no-fav" style={{ width: "15px"}}/> 
+            : <img src="../images/fav.png" alt="fav" style={{ width: "15px"}}/>}
       </button>
     </div>
   );
